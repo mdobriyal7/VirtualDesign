@@ -1,0 +1,189 @@
+@import './styles/global.scss';
+
+html {
+  font-size: var(--font-size-base);
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+
+  .container-sm,
+  .container {
+    max-width: var(--container-sm);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: var(--container-md);
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: var(--container-lg);
+  }
+
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: var(--container-xl);
+  }
+
+  html {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: var(--container-xxl);
+  }
+
+  html {
+    font-size: var(--font-size-base);
+  }
+}
+
+
+/* // Resetting some default styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+tt,
+var,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // font: inherit;
+  vertical-align: baseline;
+}
+
+/* // Resetting scrollbar styles */
+@media screen and (min-width: 992px) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #70778b #d1d8eb;
+  }
+
+  *::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    -webkit-appearance: none;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #70778b;
+    border-radius: 20px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d1d8eb;
+  }
+}
